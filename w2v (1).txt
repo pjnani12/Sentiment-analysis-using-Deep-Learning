@@ -1,0 +1,55 @@
+(998, 2)
+998
+(39, 1)
+data loaded!
+number of sentences: 1037
+vocab size: 1867
+max sentence length: 47
+('loading word2vec vectors...',)
+word2vec loaded!
+num words already in word2vec: 1752
+dataset created!
+Help on module word2vec:
+
+NAME
+    word2vec - Created on Fri Mar  2 19:14:13 2018
+
+FILE
+    /home/peddisubbi1/word2vec.py
+
+DESCRIPTION
+    @author: Jagadeesh Panthati
+
+FUNCTIONS
+    add_unknown_words(word_vecs, vocab, min_df=1, k=300)
+        For words that occur in at least min_df documents, create a separate word vector.    
+        0.25 is chosen so the unknown vectors have (approximately) same variance as pre-trained ones
+    
+    build_data_train_test(data_train, data_test, train_ratio=0.8, clean_string=True)
+        Loads data and split into train and test sets.
+    
+    clean_str(string)
+        Tokenization/string cleaning for dataset
+        Every dataset is lower cased except
+    
+    get_W(word_vecs, k=300)
+        appends single vectors into to matrix
+        Get word matrix. W[i] is the vector for word indexed by i
+    
+    load_bin_vec(fname, vocab)
+        for each word in word2vec gives a vector of size 300*1
+        Loads 300*1 word vecs from Google word2vec
+
+DATA
+    W = array([[ 0.        ,  0.        ,  0.        , ....        0.08984...
+    __warningregistry__ = {('The binary mode of fromstring is deprecated, ...
+    data_test =                                                r...999The ...
+    data_train =      sentiment                                  ... with ...
+    max_l = 47
+    revs = [{'num_words': 21, 'split': 1, 'text': 'so there is no way for ...
+    vocab = defaultdict(<type 'float'>, {'magnetic': 1.0, 's... 1.0, 'yell...
+    w2v = {'!': array([ 2.38764254e-01, -1.02843067e-02, -2.2131....470860...
+    w2v_file = 'GoogleNews-vectors-negative300.bin'
+    word_idx_map = {'!': 1033, "'d": 448, "'ll": 1841, "'re": 1369, "'s": ...
+
+
